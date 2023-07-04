@@ -83,16 +83,14 @@ footer {
     bottom: 5px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     img {
       width: 200px;
     }
-    
     h1 {
       font-size: 30px;
       top: 20px;
     }
-    
     p {
       font-size: 12px; 
     }
@@ -109,5 +107,37 @@ footer {
     .info {
         grid-template-columns: 90px 300px;
         grid-template-rows: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .pic {
+        margin: 0;
+    }
+
+    p {
+        font-size: 11px; 
+    }
+  
+    h2 {
+        font-size: 13px;
+    }
+  
+    h3 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+  
+    .info {
+        grid-template-columns: 65px 250px;
+        grid-template-rows: 25px;
+    }
+
+    #about {
+        align-items: center;
     }
   }
