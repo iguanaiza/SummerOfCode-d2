@@ -41,6 +41,7 @@ main {
     align-items: center;
     display: flex;
     justify-content: center;
+    max-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,3 +82,32 @@ footer {
     position: absolute;
     bottom: 5px;
 }
+
+@media only screen and (max-width: 800px) {
+    img {
+      width: 200px;
+    }
+    
+    h1 {
+      font-size: 30px;
+      top: 20px;
+    }
+    
+    p {
+      font-size: 12px; 
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        grid-template-columns: 90px 300px;
+        grid-template-rows: 35px;
+    }
+  }
